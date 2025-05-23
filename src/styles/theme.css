@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 117 34 230; /* #7522E6 */
+    --color-primary-light: 140 82 236; /* #8C52EC */
+    --color-primary-dark: 94 15 207; /* #5E0FCF */
+    --color-secondary: 22 138 230; /* #168AE6 */
+    --color-accent: 230 34 117; /* #E62275 */
+    --color-success: 34 197 94; /* #22C55E */
+    --color-warning: 234 179 8; /* #EAB308 */
+    --color-error: 239 68 68; /* #EF4444 */
+    --color-background: 255 255 255; /* #FFFFFF */
+    --color-surface: 249 250 251; /* #F9FAFB */
+    --color-text: 17 24 39; /* #111827 */
+    --color-text-muted: 107 114 128; /* #6B7280 */
+    --color-border: 229 231 235; /* #E5E7EB */
+  }
+
+  .dark {
+    --color-primary: 140 82 236; /* #8C52EC */
+    --color-primary-light: 163 115 242; /* #A373F2 */
+    --color-primary-dark: 117 34 230; /* #7522E6 */
+    --color-secondary: 56 182 255; /* #38B6FF */
+    --color-accent: 255 79 152; /* #FF4F98 */
+    --color-success: 52 211 153; /* #34D399 */
+    --color-warning: 251 191 36; /* #FBBF24 */
+    --color-error: 248 113 113; /* #F87171 */
+    --color-background: 15 23 42; /* #0F172A */
+    --color-surface: 30 41 59; /* #1E293B */
+    --color-text: 241 245 249; /* #F1F5F9 */
+    --color-text-muted: 148 163 184; /* #94A3B8 */
+    --color-border: 51 65 85; /* #334155 */
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-br from-purple-600 to-indigo-800 dark:from-purple-700 dark:to-indigo-900;
+  }
+  
+  .glassmorphism {
+    @apply bg-white/30 dark:bg-slate-900/40 backdrop-blur-md border border-white/20 dark:border-slate-700/30;
+  }
+  
+  .neon-glow {
+    @apply shadow-[0_0_15px_rgba(117,34,230,0.5)] dark:shadow-[0_0_20px_rgba(140,82,236,0.7)];
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl transition-all duration-200
+    focus:outline-none focus:ring-2 focus:ring-primary/50 dark:focus:ring-primary-light/50 focus:border-transparent;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-primary to-primary-light dark:from-primary-dark dark:to-primary
+    text-white rounded-xl font-medium transition-all duration-300 shadow-md
+    hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-purple-200/80 dark:bg-purple-900/30 backdrop-blur-sm text-primary dark:text-primary-light
+    rounded-xl font-medium transition-all duration-300 shadow-sm
+    hover:bg-purple-200 dark:hover:bg-purple-900/40 hover:shadow-md active:scale-[0.98];
+  }
+}
