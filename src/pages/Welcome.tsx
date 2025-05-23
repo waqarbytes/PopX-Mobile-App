@@ -73,7 +73,7 @@ export default function Welcome() {
             className="text-text-muted dark:text-text-muted text-center mb-12"
             variants={itemVariants}
           >
-            Your futuristic mobile platform for managing digital experiences
+            Your platform for managing digital experiences
           </motion.p>
           
           <motion.div 
