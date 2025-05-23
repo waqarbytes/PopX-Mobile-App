@@ -71,7 +71,7 @@ export default function Profile() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" size="lg" editable />
+            <Avatar src="https://www.freepik.com/free-vector/smiling-young-man-glasses_354177227.htm#fromView=keyword&page=1&position=39&uuid=6f9c179a-8793-4fe8-8de8-6f32de24732d&query=Male+Avatar" size="lg" editable />
             
             <div>
               <motion.h2 
